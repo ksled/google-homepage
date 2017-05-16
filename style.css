@@ -17,6 +17,15 @@ li {
   text-align: center;
 }
 
+li#signin {
+  background-color: RoyalBlue;
+  color: #FFFFFF;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  padding: 9px 15px;
+  border-radius: 2px;
+}
+
 img.logo {
   display: block;
   margin-left: 38%;
@@ -86,17 +95,27 @@ a:visited {
   text-decoration: none;
 }
 
+a:visited#signin {
+  color: #FFFFFF;
+}
+
+a:link#signin {
+  color: #FFFFFF;
+}
+
 footer {
+  background-color: #f2f2f2;
+  color: #757575;
   display: inline;
   font-size: 12px;
+  margin-top: 142px;
+  position: absolute;
+  width: 100%;
 }
 
 ul.bottom {
-  background-color: #f2f2f2;
-  background-size: contain;
-  color: #757575;
   list-style-type: none;
-  margin: 135px auto 3px auto;
+  padding: 0px 3px 6px 3px;
 }
 
 li#left {
