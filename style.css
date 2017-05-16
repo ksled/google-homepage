@@ -17,7 +17,7 @@ li {
   text-align: center;
 }
 
-li#signin {
+#signin {
   background-color: RoyalBlue;
   color: #FFFFFF;
   font-family: Arial, sans-serif;
@@ -82,13 +82,13 @@ form {
 }
 
 
-a:link {
+a:link.top {
   font-family: Arial, sans-serif;
   font-size: 12px;
   color: #000000;
   text-decoration: none;
 }
-a:visited {
+a:visited.top {
   font-family: Arial, sans-serif;
   font-size: 12px;
   color: #000000;
@@ -97,31 +97,54 @@ a:visited {
 
 a:visited#signin {
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 a:link#signin {
   color: #FFFFFF;
+  text-decoration: none;
 }
 
 footer {
   background-color: #f2f2f2;
   color: #757575;
-  display: inline;
+  display: inline-block;
   font-size: 12px;
+  line-height: 35px;
   margin-top: 142px;
+  padding: 5px 2px;
   position: absolute;
   width: 100%;
 }
 
-ul.bottom {
-  list-style-type: none;
-  padding: 0px 3px 6px 3px;
-}
-
-li#left {
+div#left {
+  display: flex;
   float: left;
+  justify-content: space-between;
+  width: 200px;
+  padding-left: 55px;
 }
 
-li#right {
+div#right {
+  display: flex;
   float: right;
+  justify-content: space-between;
+  width: 200px;
+  padding-right: 55px;
+}
+
+a:link {
+  color: #757575;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #757575;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
