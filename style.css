@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   -webkit-appearance: none;
+  text-decoration: none;
 }
 
 ul.top {
@@ -8,7 +9,7 @@ ul.top {
   float: right;
   font-size: 12px;
   list-style-type: none;
-  text-decoration: none;
+  position: relative;
 }
 
 li {
@@ -20,7 +21,6 @@ li {
 #signin {
   background-color: RoyalBlue;
   color: #FFFFFF;
-  font-family: Arial, sans-serif;
   font-weight: bold;
   padding: 9px 15px;
   border-radius: 2px;
@@ -31,23 +31,22 @@ img.logo {
   margin-left: 39%;
   margin-right: 61%;
   padding-top: 200px;
+  position: relative;
 }
 
 .search {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
   width: 403px;
   height: 34px;
   border-radius: 1px;
-  font: 16px arial,sans-serif;
+  font-size: 16px;
   line-height: 34px;
   display: block;
   text-align: start;
   border: 1px solid #AEACAC;
 }
 
-.google-search {
+.button {
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 2px;
@@ -59,22 +58,6 @@ img.logo {
   margin: 11px 4px;
   min-width: 54px;
   padding: 0 16px;
-  text-align: center;
-}
-
-.lucky {
-  background-color: #f2f2f2;
-  border: 1px solid #f2f2f2;
-  border-radius: 2px;
-  color: #757575;
-  font-weight: bold;
-  font-size: 13px;
-  height: 36px;
-  line-height: 27px;
-  margin: 11px 4px;
-  min-width: 54px;
-  padding: 0 16px;
-  text-align: center;
 }
 
 form {
@@ -82,27 +65,13 @@ form {
 }
 
 
-a:link.top {
-  font-family: Arial, sans-serif;
+a:link.top, a:visited.top {
   font-size: 12px;
   color: #000000;
-  text-decoration: none;
-}
-a:visited.top {
-  font-family: Arial, sans-serif;
-  font-size: 12px;
-  color: #000000;
-  text-decoration: none;
 }
 
-a:visited#signin {
+a:visited#signin, a:link#signin {
   color: #FFFFFF;
-  text-decoration: none;
-}
-
-a:link#signin {
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 footer {
@@ -111,35 +80,29 @@ footer {
   display: inline-block;
   font-size: 12px;
   line-height: 35px;
-  margin-top: 142px;
   padding: 5px 2px;
+  bottom: 0;
   position: absolute;
   width: 100%;
 }
 
-div.left {
+div.left, div.right {
   display: flex;
-  float: left;
   justify-content: space-between;
   width: 200px;
+}
+
+div.left {
+  float: left;
   padding-left: 55px;
 }
 
 div.right {
-  display: flex;
   float: right;
-  justify-content: space-between;
-  width: 200px;
   padding-right: 55px;
 }
 
-a:link {
-  color: #757575;
-  font-size: 12px;
-  text-decoration: none;
-}
-
-a:visited {
+a:link, a:visited {
   color: #757575;
   font-size: 12px;
   text-decoration: none;
@@ -151,16 +114,10 @@ a:hover {
 
 a:hover#signin {
   box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 10px 0 rgba(0,0,0,0.19);
+  text-decoration: none;
 }
 
-.google-search:hover {
-  color: #000000;
-  box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24), 0 9px 35px 0 rgba(0,0,0,0.19);
-  border: 1px solid #000000;
-  border-radius: 2px;
-}
-
-.lucky:hover {
+.button:hover {
   color: #000000;
   box-shadow: 0 5px 7px 0 rgba(0,0,0,0.24), 0 9px 35px 0 rgba(0,0,0,0.19);
   border: 1px solid #000000;
